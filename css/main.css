@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+        - List
+        _ Anchor
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Navigation
+        - Related artical 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - screen reader	    
+--------------------------------------------------------------*/
+
+/* jkgjhfhgghjkfhdffhghjgj
+ghjkhghjk */
+
+/*--------------------------------------------------------------
+    3.0 - GENERTIC
+-------------------------------------------------------------- */
+
+/* ----- universal ----- */
+
+* {
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/*--------------------------------------------------------------
+    4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+
+
+
+/* ----- Typography ----- */
+
+h1,
+h2,
+h3,
+h4,
+header a,
+main a {
+        text-transform: uppercase;
+}
+
+h1,
+footer,
+header ul a,
+main a {
+        color: #FFFFFF;
+}
+
+h1 {
+        text-align: center;
+}
+
+header div:first-child span {
+        font-weight: 700;
+        font-size: 18px;
+}
+
+main span {
+        font-weight: 900;
+        font-size: 50px;
+        color: #FE8360;
+}
+
+main section:first-of-type span {
+        color: #3F3C45;
+        font-weight: 300;
+        font-size: 18px
+}
+
+main section:first-of-type p:last-of-type {
+        margin-top: 50px;
+}
+
+/* ----- list ----- */
+
+header li,
+footer li {
+        list-style-type: none;
+
+}
+
+header li,
+footer section:last-child li {
+        display: inline-block;
+}
+
+header ul,
+main a {
+        background-color: #FE8360;
+        padding: 15px;
+}
+
+header ul {
+        margin-bottom: 0;
+}
+
+
+/* ----- nav----- */
+
+
+/* ----- anchor ----- */
+
+a {
+        text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+    4.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/* ----- Framework ----- */
+
+.wrapper {
+        width: 1024px;
+        margin: 0 auto;
+}
+
+.row {
+        display: flex;
+        justify-content: space-between;
+}
+
+
+main div:first-child section {
+        width: 500px;
+}
+
+
+
+
+  /*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+body > header,
+main > div {
+        margin: 70px 0;
+}
+
+/* ----- footer----- */
+
+footer {
+        background-color:  #4D515C;
+        padding: 50px 0;
+}
+
+footer a {
+        color: #B6BCC7;
+        font-weight: 400;
+        font-size: 14px;
+}
+
+footer ul {
+        padding-left: 0;
+}
+
+
+/* ----- Button ----- */
+
+
+
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITY
+-------------------------------------------------------------- */
+
+/* ----- Screen reader ----- */
+
+.sr-only {
+        position: absolute;
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0,0,0,0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+  }
+
+  /* ----- Color----- */
+
+#bg-image-hero {
+                background: url(../img/laptop.jpg) no-repeat center;
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                -ms-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                width: 100%;
+
+                padding: 200px;
+          }
+
+#bg-image-relative {
+                background: url(../img/lady.jpg) no-repeat;
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                -ms-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                width: 409px;
+                height:409px;
+
+}
+
+
+
