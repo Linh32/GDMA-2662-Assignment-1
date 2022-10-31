@@ -49,14 +49,14 @@
     
                 </header>
 
-                <form action="" class="row">
+                <form class="row">
 
                     <label for="domain" class="sr-only">search your domain</label>
                     <input type="text" name="domain" id="domain" placeholder="Enter your domain name">
 
                     <label for="year" class="sr-only">year</label>
-                    <select>
-                        <option value="year (0-1)" hidden disabled checked >year (0-1)</option>
+                    <select id="year">
+                        <option value="year (0-1)" hidden disabled selected >year (0-1)</option>
                         <option value="0-1 years">0-1 years</option>
                         <option value="1-2 years">1-2 years</option>
                         <option value="3-5 years">3-5 years</option>
@@ -65,8 +65,8 @@
                     </select>
 
                     <label for="com" class="sr-only">com</label>
-                    <select>
-                        <option value=".com" hidden disabled checked >.com</option>
+                    <select id="com">
+                        <option value=".com" hidden disabled selected >.com</option>
                         <option value=".com">.com</option>
                         <option value=".org">.org</option>
                         <option value=".net">.net</option>
@@ -202,7 +202,7 @@
                 <ul>
                     <li>Address: <a href="https://www.google.com/maps">Fake St. Fakersville FA 12345</a></li>
                     <li>Email: <a href="mailto:info@acton.com">info@acton.com</a></li>
-                    <li>Phone: <a href="tel:+1 800-123-4567">800-123-4567</a></li>
+                    <li>Phone: <a href="tel:+1800-123-4567">800-123-4567</a></li>
                 </ul>
 
             </section>
