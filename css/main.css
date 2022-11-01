@@ -71,16 +71,6 @@ button {
         color: #FFFFFF;
 }
 
-.col-3 h2 {
-        font-weight: 700;
-        font-size: 18px;
-        margin: 0;
-}
-
-.col-3 p {
-        margin: 0;
-}
-
 h2 {
         font-weight: 700;
         font-size: 35px;
@@ -155,6 +145,10 @@ header ul {
         padding: 0px;      
 }
 
+main div:first-child ul {
+        margin-bottom: 40px;
+}
+
 
 
 /* ----- nav----- */
@@ -218,6 +212,15 @@ main div:first-child section {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+.col-3 h2 {
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+}
+
+.col-3 p {
+        margin: 0;
+}
 
 .col-3 div:last-child {
         width: 255px;
